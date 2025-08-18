@@ -46,7 +46,7 @@ const projects = [project1Ref.current, project2Ref.current, project3Ref.current]
                     {/* left-side */}
                     <div className='first-project-wrapper' ref={project1Ref}>
                         <div className='image-wrapper'>
-                            <img src="src/public/images/MyProject1.png" />
+                            <img src="public/images/MyProject1.png" />
                         </div>
                         <div className='text-content'>
                             <h2>Skydev User-firendly interface help business grow  </h2>
@@ -59,14 +59,14 @@ const projects = [project1Ref.current, project2Ref.current, project3Ref.current]
                     <div className='project-list-wrapper overflow-hidden'>
                         <div className='project' ref={project2Ref}>
                             <div className='image-wrapper bg-[#ffe7eb]'>
-                                <img src="src/public/images/MyProject2.png  " alt="Mern todolist" />
+                                <img src="public/images/MyProject2.png  " alt="Mern todolist" />
                             </div>
                             <h2>Mern TodoList </h2>
                         </div>
 
                         <div className='project' ref={project3Ref}>
                             <div className='image-wrapper bg-[#ffefdb]'>
-                                <img src="src/public/images/MyProject3.png  " alt="Ecommerce Website" />
+                                <img src="public/images/MyProject3.png  " alt="Ecommerce Website" />
                             </div>
                             <h2>An Ecommerce Website through Vanila Javascript  </h2>
                         </div>

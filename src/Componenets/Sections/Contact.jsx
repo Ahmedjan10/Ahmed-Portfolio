@@ -100,7 +100,7 @@ const Contact = () => {
                       {loading ? "Sending..." : "Send Message"}
                     </p>
                     <div className="arrow-wrapper">
-                      <img src="src/public/images/arrow-down.svg" alt="arrow" />
+                      <img src="public/images/arrow-down.svg" alt="arrow" />
                     </div>
                   </div>
                 </button>
