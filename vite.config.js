@@ -6,4 +6,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  base:'Ahmed-Portfolio'
 })
