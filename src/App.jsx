@@ -1,11 +1,11 @@
-import Hero from "./Componenets/Sections/Hero"
-import ShowcaseSection from "./Componenets/Sections/ShowcaseSection"
+import Hero from "./Sections/Hero"
+import ShowcaseSection from "./Sections/ShowcaseSection"
 import NavBar from "./Componenets/NavBar"
-import FeatureCards from "./Componenets/Sections/FeatureCards"
-import ExperienceSection from "./Componenets/Sections/ExperienceSection"
-import TechStack from "./Componenets/Sections/TechStack"
-import Contact from "./Componenets/Sections/Contact"  
-import Footer from "./Componenets/Sections/Footer"
+import FeatureCards from "./Sections/FeatureCards"
+import ExperienceSection from "./Sections/ExperienceSection"
+import TechStack from "./Sections/TechStack"
+import Contact from "./Sections/Contact"  
+import Footer from "./Sections/Footer"
 
 const App = () => {
   return (

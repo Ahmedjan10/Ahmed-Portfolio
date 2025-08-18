@@ -1,5 +1,5 @@
 import React from 'react'
-import { socialImgs } from '../../Constant/Index'
+import { socialImgs } from '../Constant/Index'
 
 const Footer = () => {
   return (

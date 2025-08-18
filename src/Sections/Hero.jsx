@@ -1,10 +1,10 @@
 import React from 'react'
-import { words } from '../../Constant/Index'
-import Button from '../Button'
-import HeroExperiance from '../Models/HeroModels/HeroExperiance'
+import { words } from '../Constant/Index'
+import Button from '../Componenets/Button'
+import HeroExperiance from '../Componenets/Models/HeroModels/HeroExperiance'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap';
-import AnimatedCounter from '../AnimatedCounter'
+import AnimatedCounter from '../Componenets/AnimatedCounter'
 const Hero = () => {
     useGSAP(()=>{
         gsap.fromTo('.hero-text h1',

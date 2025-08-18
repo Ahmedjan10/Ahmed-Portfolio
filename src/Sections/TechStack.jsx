@@ -1,7 +1,7 @@
 import React from 'react'
-import TitleHeader from '../TitleHeader'
-import { techStackIcons, techStackImgs } from '../../Constant/Index'
-import TechIcon from '../Models/TechLogos/TechIcon'
+import TitleHeader from '../Componenets/TitleHeader'
+import { techStackIcons, techStackImgs } from '../Constant/Index'
+import TechIcon from '../Componenets/Models/TechLogos/TechIcon'
 import { useGSAP } from '@gsap/react'
 import {gsap} from 'gsap'
 
