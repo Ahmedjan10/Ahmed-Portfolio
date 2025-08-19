@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
+    
   ],
-  base:'Ahmed-Portfolio'
+  base:'/Ahmed-Portfolio/'
 })

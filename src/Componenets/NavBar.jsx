@@ -41,7 +41,7 @@ const NavBar = () => {
                 </span>
             </div>
             </a>
-
+          
         </div>
 
     </header>
