@@ -1,12 +1,12 @@
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Detailed } from "@react-three/drei";
+import { useMemo, useState, useEffect } from "react";
 
-export function Computer(props) {
-  const { nodes, materials } = useGLTF(
-    "/models/computer-optimized-transformed.glb"
-  );
-
+// Create multiple quality versions
+function HighQualityComputer() {
+  const { nodes, materials } = useGLTF("/models/computer-optimized-transformed.glb");
+  
   return (
-    <group {...props} dispose={null}>
+    <group dispose={null}>
       <group position={[-4.005, 67.549, 58.539]}>
         <mesh
           castShadow
@@ -25,6 +25,45 @@ export function Computer(props) {
   );
 }
 
+function MediumQualityComputer() {
+  // Simplified version - fewer polygons, basic materials
+  return (
+    <group>
+      <mesh position={[-4.005, 67.549, 58.539]}>
+        <boxGeometry args={[80, 50, 60]} />
+        <meshStandardMaterial color="#4a4a4a" roughness={0.7} />
+      </mesh>
+      <mesh position={[-4.005, 77.549, 58.539]}>
+        <boxGeometry args={[70, 2, 50]} />
+        <meshStandardMaterial color="#2a2a2a" />
+      </mesh>
+    </group>
+  );
+}
+
+function LowQualityComputer() {
+  // Ultra simple version for distant viewing
+  return (
+    <mesh position={[-4.005, 67.549, 58.539]}>
+      <boxGeometry args={[80, 60, 60]} />
+      <meshBasicMaterial color="#3a3a3a" />
+    </mesh>
+  );
+}
+
+export function Computer(props) {
+  return (
+    <group {...props}>
+      <Detailed distances={[0, 15, 25]}>
+        <HighQualityComputer />
+        <MediumQualityComputer />
+        <LowQualityComputer />
+      </Detailed>
+    </group>
+  );
+}
+
+// Preload only when needed
 useGLTF.preload("/models/computer-optimized-transformed.glb");
 
 export default Computer;
